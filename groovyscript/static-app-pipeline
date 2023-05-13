@@ -3,8 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                aws s3 cp * s3://static-website-rct/
-                echo " deployment completed"
+                echo "buidl completed"
             }
         }
     }
