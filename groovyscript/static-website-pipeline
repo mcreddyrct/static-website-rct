@@ -5,7 +5,7 @@ pipeline{
             sh 'date'
             sh 'pwd'
             sh 'echo $SHELL'
-            sh' 'echo $HOSTNAME'
+            sh 'echo $HOSTNAME'
 
         }
     }
