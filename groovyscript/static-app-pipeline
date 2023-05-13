@@ -1,0 +1,9 @@
+pipeline{
+    agnet any
+    stages{
+        stage("Build"){
+            aws s3 cp index.html s3://static-website-rct/
+            
+        }
+    }
+}
