@@ -2,7 +2,7 @@ pipeline{
     agnet any
     stages{
         stage("Build"){
-            step{
+            steps{
                 aws s3 cp groovyscript/index.html s3://static-website-rct/
             }
             
