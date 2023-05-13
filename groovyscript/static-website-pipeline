@@ -1,6 +1,7 @@
 pipeline{
+    agent any
     stages{
-        stage('Build'){
+        steps('Build'){
             sh 'date'
             sh 'pwd'
             sh 'echo $SHELL'
