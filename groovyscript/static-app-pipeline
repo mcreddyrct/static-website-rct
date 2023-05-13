@@ -1,12 +1,11 @@
 pipeline{
-    agnet any
+    agent any
     stages{
-        stage("Build"){
+        stage(" Build"){
             steps{
-                aws s3 cp groovyscript/index.html s3://static-website-rct/
+                aws s3 cp groovyscript/* s3://static-website-rct/
+                echo " deployment completed"
             }
-            
-            
         }
     }
 }
