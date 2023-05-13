@@ -5,6 +5,7 @@ pipeline{
             steps{
                 echo "buidl completed"
                 emailext body: 'deployment completed, please do sanity check', subject: 'status', to: 'chinnareddy.mummasani@gmail.com'
+                aws s3 cp * s3://static-website-rct/
             }
         }
     }
