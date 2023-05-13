@@ -4,6 +4,8 @@ pipeline{
         stage("Build"){
             steps{
                 sh 'date'
+                sh 'echo $SHELL'
+                sh 'pwd'
             }
         }
     }
