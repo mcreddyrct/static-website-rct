@@ -1,7 +1,6 @@
 pipeline{
     stages{
         stage('Build'){
-            echo " Build the simple war file"
             sh 'date'
             sh 'pwd'
             sh 'echo $SHELL'
