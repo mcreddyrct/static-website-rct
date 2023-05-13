@@ -1,6 +1,6 @@
 pipeline{
     stages{
-        stage(' Build') {
+        stage('Build'){
             echo " Build the simple war file"
             sh 'date'
             sh 'pwd'
